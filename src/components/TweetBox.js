@@ -1,5 +1,5 @@
 import React from "react";
-import "./TweetBox.css";
+import "../stylesheets/TweetBox.css";
 
 function TweetBox() {
     return <div className="tweetBox">

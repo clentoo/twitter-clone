@@ -1,5 +1,5 @@
 import React from "react";
-import "./Feed.css";
+import "../stylesheets/Feed.css";
 import TweetBox from "./TweetBox"
 
 function Feed() {

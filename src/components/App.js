@@ -1,4 +1,4 @@
-import "./App.css";
+import "../stylesheets/App.css";
 import Sidebar from "./Sidebar";
 import Feed from "./Feed";
 import Widgets from "./Widgets";
