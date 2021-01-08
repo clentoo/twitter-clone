@@ -1,5 +1,6 @@
 import "./App.css";
 import Sidebar from "./Sidebar";
+import Feed from "./Feed";
 
 function App() {
   //BEM
@@ -9,6 +10,7 @@ function App() {
       <Sidebar />
 
       {/* Feed */}
+      <Feed />
 
       {/* Widgets */}
     </div>
