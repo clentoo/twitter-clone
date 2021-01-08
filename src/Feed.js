@@ -1,5 +1,6 @@
 import React from "react";
 import "./Feed.css";
+import TweetBox from "./TweetBox"
 
 function Feed() {
   return (
@@ -9,77 +10,7 @@ function Feed() {
         <h2>Home</h2>
       </div>
       {/* Tweet Box */}
-      <h3>abc</h3>
-      <h3>abc</h3>
-      <h3>abc</h3>
-      <h3>abc</h3>
-      <h3>abc</h3>
-      <h3>abc</h3>
-      <h3>abc</h3>
-      <h3>abc</h3>
-      <h3>abc</h3>
-      <h3>abc</h3>
-      <h3>abc</h3>
-      <h3>abc</h3>
-      <h3>abc</h3>
-      <h3>abc</h3>
-      <h3>abc</h3>
-      <h3>abc</h3>
-      <h3>abc</h3>
-      <h3>abc</h3>
-      <h3>abc</h3>
-      <h3>abc</h3>
-      <h3>abc</h3>
-      <h3>abc</h3>
-      <h3>abc</h3>
-      <h3>abc</h3>
-      <h3>abc</h3>
-      <h3>abc</h3>
-      <h3>abc</h3>
-      <h3>abc</h3>
-      <h3>abc</h3>
-      <h3>abc</h3>
-      <h3>abc</h3>
-      <h3>abc</h3>
-      <h3>abc</h3>
-      <h3>abc</h3>
-      <h3>abc</h3>
-      <h3>abc</h3>
-      <h3>abc</h3>
-      <h3>abc</h3>
-      <h3>abc</h3>
-      <h3>abc</h3>
-      <h3>abc</h3>
-      <h3>abc</h3>
-      <h3>abc</h3>
-      <h3>abc</h3>
-      <h3>abc</h3>
-      <h3>abc</h3>
-      <h3>abc</h3>
-      <h3>abc</h3>
-      <h3>abc</h3>
-      <h3>abc</h3>
-      <h3>abc</h3>
-      <h3>abc</h3>
-      <h3>abc</h3>
-      <h3>abc</h3>
-      <h3>abc</h3>
-      <h3>abc</h3>
-      <h3>abc</h3>
-      <h3>abc</h3>
-      <h3>abc</h3>
-      <h3>abc</h3>
-      <h3>abc</h3>
-      <h3>abc</h3>
-      <h3>abc</h3>
-      <h3>abc</h3>
-      <h3>abc</h3>
-      <h3>abc</h3>
-      <h3>abc</h3>
-      <h3>abc</h3>
-      <h3>abc</h3>
-      <h3>abc</h3>
-      <h3>abc</h3>
+   <TweetBox/>
 
       {/* Posts */}
 
