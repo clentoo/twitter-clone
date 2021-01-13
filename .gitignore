@@ -24,4 +24,6 @@ yarn-error.log*
 
 #cache
 .eslintcache
-.debug.log
+
+#log
+/debug.log
