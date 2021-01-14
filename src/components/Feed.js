@@ -3,6 +3,7 @@ import TweetBox from "./TweetBox";
 import Post from "./Post";
 import "../stylesheets/Feed.css";
 import db from "../firebase";
+import FlipMove from "react-flip-move";
 
 function Feed() {
   const [posts, setPosts] = useState([]);
@@ -12,6 +13,8 @@ function Feed() {
       setPosts(snapshot.docs.map((doc) => doc.data()))
     );
   }, []);
+
+  //doc.id should be returned in a more unique key context
 
   //Alternative setup 1 and 2
   // const ref = db.collection("posts");
@@ -36,7 +39,6 @@ function Feed() {
   //   getPosts();
   //   getPosts2();
   // }, []);
-  console.log(posts);
 
   return (
     <div className="feed">
@@ -47,19 +49,21 @@ function Feed() {
       {/* Tweet Box */}
       <TweetBox />
       {/* Posts */}
-
-      {posts.map((post) => {
-        return (
-          <Post
-            displayName={post.displayName}
-            verified={post.verified}
-            username={post.username}
-            text={post.text}
-            avatar={post.avatar}
-            image={post.image}
-          />
-        );
-      })}
+      <FlipMove>
+        {posts.map((post) => {
+          return (
+            <Post
+              key={post.text}
+              displayName={post.displayName}
+              verified={post.verified}
+              username={post.username}
+              text={post.text}
+              avatar={post.avatar}
+              image={post.image}
+            />
+          );
+        })}
+      </FlipMove>
     </div>
   );
 }
